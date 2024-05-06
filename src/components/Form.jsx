@@ -12,7 +12,6 @@ function Form() {
 
   const handleChange = (e) => {
     const { id, value } = e.target;
-    // Dynamically update state based on the input field
     switch (id) {
       case 'firstName':
         setFirstName(value);
