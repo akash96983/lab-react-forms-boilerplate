@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../App.css'
+import '../App.css';
 
 function Form() {
   const [firstName, setFirstName] = useState('');
@@ -40,7 +40,7 @@ function Form() {
     if (isSubmit && Object.keys(formError).length === 0) {
       setSuccess(true);
     }
-  }, [formError]);
+  }, [formError, isSubmit]);
 
   const checkError = () => {
     let error = {};
